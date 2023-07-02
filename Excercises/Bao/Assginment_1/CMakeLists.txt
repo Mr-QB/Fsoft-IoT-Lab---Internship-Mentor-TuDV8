@@ -3,4 +3,4 @@ project(Exceptions)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(1.1.c)
+add_executable(topic_4.c)
