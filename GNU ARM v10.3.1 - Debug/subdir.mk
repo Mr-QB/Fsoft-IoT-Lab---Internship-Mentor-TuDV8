@@ -1,0 +1,54 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+# Add inputs and outputs from these tool invocations to the build variables 
+C_SRCS += \
+../AHT20.c \
+../app.c \
+../blink.c \
+../main.c 
+
+OBJS += \
+./AHT20.o \
+./app.o \
+./blink.o \
+./main.o 
+
+C_DEPS += \
+./AHT20.d \
+./app.d \
+./blink.d \
+./main.d 
+
+
+# Each subdirectory must supply rules for building sources it contributes
+AHT20.o: ../AHT20.c subdir.mk
+	@echo 'Building file: $<'
+	@echo 'Invoking: GNU ARM C Compiler'
+	arm-none-eabi-gcc -g -gdwarf-2 -mcpu=cortex-m33 -mthumb -std=c99 '-DDEBUG=1' '-DDEBUG_EFM=1' '-DBGM220PC22HNA=1' '-DHARDWARE_BOARD_DEFAULT_RF_BAND_2400=1' '-DHARDWARE_BOARD_SUPPORTS_1_RF_BAND=1' '-DHARDWARE_BOARD_SUPPORTS_RF_BAND_2400=1' '-DSL_BOARD_NAME="BRD4314A"' '-DSL_BOARD_REV="A02"' '-DSL_COMPONENT_CATALOG_PRESENT=1' '-DRTT_USE_ASM=0' '-DSEGGER_RTT_SECTION="SEGGER_RTT"' -I"C:\Users\ADMIN\SimplicityStudio\v5_workspace\AHT20V4\config" -I"C:\Users\ADMIN\SimplicityStudio\v5_workspace\AHT20V4\autogen" -I"C:\Users\ADMIN\SimplicityStudio\v5_workspace\AHT20V4" -I"C:/Users/ADMIN/SimplicityStudio/SDKs/gecko_sdk//platform/Device/SiliconLabs/BGM22/Include" -I"C:/Users/ADMIN/SimplicityStudio/SDKs/gecko_sdk//app/common/util/app_log" -I"C:/Users/ADMIN/SimplicityStudio/SDKs/gecko_sdk//platform/common/inc" -I"C:/Users/ADMIN/SimplicityStudio/SDKs/gecko_sdk//hardware/board/inc" -I"C:/Users/ADMIN/SimplicityStudio/SDKs/gecko_sdk//platform/CMSIS/Core/Include" -I"C:/Users/ADMIN/SimplicityStudio/SDKs/gecko_sdk//platform/driver/debug/inc" -I"C:/Users/ADMIN/SimplicityStudio/SDKs/gecko_sdk//platform/service/device_init/inc" -I"C:/Users/ADMIN/SimplicityStudio/SDKs/gecko_sdk//platform/emlib/inc" -I"C:/Users/ADMIN/SimplicityStudio/SDKs/gecko_sdk//platform/emlib/init/gpio_simple" -I"C:/Users/ADMIN/SimplicityStudio/SDKs/gecko_sdk//platform/driver/i2cspm/inc" -I"C:/Users/ADMIN/SimplicityStudio/SDKs/gecko_sdk//platform/service/iostream/inc" -I"C:/Users/ADMIN/SimplicityStudio/SDKs/gecko_sdk//util/third_party/printf" -I"C:/Users/ADMIN/SimplicityStudio/SDKs/gecko_sdk//util/third_party/printf/inc" -I"C:/Users/ADMIN/SimplicityStudio/SDKs/gecko_sdk//util/third_party/segger/systemview/SEGGER" -I"C:/Users/ADMIN/SimplicityStudio/SDKs/gecko_sdk//platform/common/toolchain/inc" -I"C:/Users/ADMIN/SimplicityStudio/SDKs/gecko_sdk//platform/service/system/inc" -I"C:/Users/ADMIN/SimplicityStudio/SDKs/gecko_sdk//platform/service/sleeptimer/inc" -I"C:/Users/ADMIN/SimplicityStudio/SDKs/gecko_sdk//platform/service/udelay/inc" -Os -Wall -Wextra -mno-sched-prolog -fno-builtin -ffunction-sections -fdata-sections -imacrossl_gcc_preinclude.h -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mcmse -fno-builtin-printf -fno-builtin-sprintf --specs=nano.specs -c -fmessage-length=0 -MMD -MP -MF"AHT20.d" -MT"$@" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+app.o: ../app.c subdir.mk
+	@echo 'Building file: $<'
+	@echo 'Invoking: GNU ARM C Compiler'
+	arm-none-eabi-gcc -g -gdwarf-2 -mcpu=cortex-m33 -mthumb -std=c99 '-DDEBUG=1' '-DDEBUG_EFM=1' '-DBGM220PC22HNA=1' '-DHARDWARE_BOARD_DEFAULT_RF_BAND_2400=1' '-DHARDWARE_BOARD_SUPPORTS_1_RF_BAND=1' '-DHARDWARE_BOARD_SUPPORTS_RF_BAND_2400=1' '-DSL_BOARD_NAME="BRD4314A"' '-DSL_BOARD_REV="A02"' '-DSL_COMPONENT_CATALOG_PRESENT=1' '-DRTT_USE_ASM=0' '-DSEGGER_RTT_SECTION="SEGGER_RTT"' -I"C:\Users\ADMIN\SimplicityStudio\v5_workspace\AHT20V4\config" -I"C:\Users\ADMIN\SimplicityStudio\v5_workspace\AHT20V4\autogen" -I"C:\Users\ADMIN\SimplicityStudio\v5_workspace\AHT20V4" -I"C:/Users/ADMIN/SimplicityStudio/SDKs/gecko_sdk//platform/Device/SiliconLabs/BGM22/Include" -I"C:/Users/ADMIN/SimplicityStudio/SDKs/gecko_sdk//app/common/util/app_log" -I"C:/Users/ADMIN/SimplicityStudio/SDKs/gecko_sdk//platform/common/inc" -I"C:/Users/ADMIN/SimplicityStudio/SDKs/gecko_sdk//hardware/board/inc" -I"C:/Users/ADMIN/SimplicityStudio/SDKs/gecko_sdk//platform/CMSIS/Core/Include" -I"C:/Users/ADMIN/SimplicityStudio/SDKs/gecko_sdk//platform/driver/debug/inc" -I"C:/Users/ADMIN/SimplicityStudio/SDKs/gecko_sdk//platform/service/device_init/inc" -I"C:/Users/ADMIN/SimplicityStudio/SDKs/gecko_sdk//platform/emlib/inc" -I"C:/Users/ADMIN/SimplicityStudio/SDKs/gecko_sdk//platform/emlib/init/gpio_simple" -I"C:/Users/ADMIN/SimplicityStudio/SDKs/gecko_sdk//platform/driver/i2cspm/inc" -I"C:/Users/ADMIN/SimplicityStudio/SDKs/gecko_sdk//platform/service/iostream/inc" -I"C:/Users/ADMIN/SimplicityStudio/SDKs/gecko_sdk//util/third_party/printf" -I"C:/Users/ADMIN/SimplicityStudio/SDKs/gecko_sdk//util/third_party/printf/inc" -I"C:/Users/ADMIN/SimplicityStudio/SDKs/gecko_sdk//util/third_party/segger/systemview/SEGGER" -I"C:/Users/ADMIN/SimplicityStudio/SDKs/gecko_sdk//platform/common/toolchain/inc" -I"C:/Users/ADMIN/SimplicityStudio/SDKs/gecko_sdk//platform/service/system/inc" -I"C:/Users/ADMIN/SimplicityStudio/SDKs/gecko_sdk//platform/service/sleeptimer/inc" -I"C:/Users/ADMIN/SimplicityStudio/SDKs/gecko_sdk//platform/service/udelay/inc" -Os -Wall -Wextra -mno-sched-prolog -fno-builtin -ffunction-sections -fdata-sections -imacrossl_gcc_preinclude.h -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mcmse -fno-builtin-printf -fno-builtin-sprintf --specs=nano.specs -c -fmessage-length=0 -MMD -MP -MF"app.d" -MT"$@" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+blink.o: ../blink.c subdir.mk
+	@echo 'Building file: $<'
+	@echo 'Invoking: GNU ARM C Compiler'
+	arm-none-eabi-gcc -g -gdwarf-2 -mcpu=cortex-m33 -mthumb -std=c99 '-DDEBUG=1' '-DDEBUG_EFM=1' '-DBGM220PC22HNA=1' '-DHARDWARE_BOARD_DEFAULT_RF_BAND_2400=1' '-DHARDWARE_BOARD_SUPPORTS_1_RF_BAND=1' '-DHARDWARE_BOARD_SUPPORTS_RF_BAND_2400=1' '-DSL_BOARD_NAME="BRD4314A"' '-DSL_BOARD_REV="A02"' '-DSL_COMPONENT_CATALOG_PRESENT=1' '-DRTT_USE_ASM=0' '-DSEGGER_RTT_SECTION="SEGGER_RTT"' -I"C:\Users\ADMIN\SimplicityStudio\v5_workspace\AHT20V4\config" -I"C:\Users\ADMIN\SimplicityStudio\v5_workspace\AHT20V4\autogen" -I"C:\Users\ADMIN\SimplicityStudio\v5_workspace\AHT20V4" -I"C:/Users/ADMIN/SimplicityStudio/SDKs/gecko_sdk//platform/Device/SiliconLabs/BGM22/Include" -I"C:/Users/ADMIN/SimplicityStudio/SDKs/gecko_sdk//app/common/util/app_log" -I"C:/Users/ADMIN/SimplicityStudio/SDKs/gecko_sdk//platform/common/inc" -I"C:/Users/ADMIN/SimplicityStudio/SDKs/gecko_sdk//hardware/board/inc" -I"C:/Users/ADMIN/SimplicityStudio/SDKs/gecko_sdk//platform/CMSIS/Core/Include" -I"C:/Users/ADMIN/SimplicityStudio/SDKs/gecko_sdk//platform/driver/debug/inc" -I"C:/Users/ADMIN/SimplicityStudio/SDKs/gecko_sdk//platform/service/device_init/inc" -I"C:/Users/ADMIN/SimplicityStudio/SDKs/gecko_sdk//platform/emlib/inc" -I"C:/Users/ADMIN/SimplicityStudio/SDKs/gecko_sdk//platform/emlib/init/gpio_simple" -I"C:/Users/ADMIN/SimplicityStudio/SDKs/gecko_sdk//platform/driver/i2cspm/inc" -I"C:/Users/ADMIN/SimplicityStudio/SDKs/gecko_sdk//platform/service/iostream/inc" -I"C:/Users/ADMIN/SimplicityStudio/SDKs/gecko_sdk//util/third_party/printf" -I"C:/Users/ADMIN/SimplicityStudio/SDKs/gecko_sdk//util/third_party/printf/inc" -I"C:/Users/ADMIN/SimplicityStudio/SDKs/gecko_sdk//util/third_party/segger/systemview/SEGGER" -I"C:/Users/ADMIN/SimplicityStudio/SDKs/gecko_sdk//platform/common/toolchain/inc" -I"C:/Users/ADMIN/SimplicityStudio/SDKs/gecko_sdk//platform/service/system/inc" -I"C:/Users/ADMIN/SimplicityStudio/SDKs/gecko_sdk//platform/service/sleeptimer/inc" -I"C:/Users/ADMIN/SimplicityStudio/SDKs/gecko_sdk//platform/service/udelay/inc" -Os -Wall -Wextra -mno-sched-prolog -fno-builtin -ffunction-sections -fdata-sections -imacrossl_gcc_preinclude.h -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mcmse -fno-builtin-printf -fno-builtin-sprintf --specs=nano.specs -c -fmessage-length=0 -MMD -MP -MF"blink.d" -MT"$@" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+main.o: ../main.c subdir.mk
+	@echo 'Building file: $<'
+	@echo 'Invoking: GNU ARM C Compiler'
+	arm-none-eabi-gcc -g -gdwarf-2 -mcpu=cortex-m33 -mthumb -std=c99 '-DDEBUG=1' '-DDEBUG_EFM=1' '-DBGM220PC22HNA=1' '-DHARDWARE_BOARD_DEFAULT_RF_BAND_2400=1' '-DHARDWARE_BOARD_SUPPORTS_1_RF_BAND=1' '-DHARDWARE_BOARD_SUPPORTS_RF_BAND_2400=1' '-DSL_BOARD_NAME="BRD4314A"' '-DSL_BOARD_REV="A02"' '-DSL_COMPONENT_CATALOG_PRESENT=1' '-DRTT_USE_ASM=0' '-DSEGGER_RTT_SECTION="SEGGER_RTT"' -I"C:\Users\ADMIN\SimplicityStudio\v5_workspace\AHT20V4\config" -I"C:\Users\ADMIN\SimplicityStudio\v5_workspace\AHT20V4\autogen" -I"C:\Users\ADMIN\SimplicityStudio\v5_workspace\AHT20V4" -I"C:/Users/ADMIN/SimplicityStudio/SDKs/gecko_sdk//platform/Device/SiliconLabs/BGM22/Include" -I"C:/Users/ADMIN/SimplicityStudio/SDKs/gecko_sdk//app/common/util/app_log" -I"C:/Users/ADMIN/SimplicityStudio/SDKs/gecko_sdk//platform/common/inc" -I"C:/Users/ADMIN/SimplicityStudio/SDKs/gecko_sdk//hardware/board/inc" -I"C:/Users/ADMIN/SimplicityStudio/SDKs/gecko_sdk//platform/CMSIS/Core/Include" -I"C:/Users/ADMIN/SimplicityStudio/SDKs/gecko_sdk//platform/driver/debug/inc" -I"C:/Users/ADMIN/SimplicityStudio/SDKs/gecko_sdk//platform/service/device_init/inc" -I"C:/Users/ADMIN/SimplicityStudio/SDKs/gecko_sdk//platform/emlib/inc" -I"C:/Users/ADMIN/SimplicityStudio/SDKs/gecko_sdk//platform/emlib/init/gpio_simple" -I"C:/Users/ADMIN/SimplicityStudio/SDKs/gecko_sdk//platform/driver/i2cspm/inc" -I"C:/Users/ADMIN/SimplicityStudio/SDKs/gecko_sdk//platform/service/iostream/inc" -I"C:/Users/ADMIN/SimplicityStudio/SDKs/gecko_sdk//util/third_party/printf" -I"C:/Users/ADMIN/SimplicityStudio/SDKs/gecko_sdk//util/third_party/printf/inc" -I"C:/Users/ADMIN/SimplicityStudio/SDKs/gecko_sdk//util/third_party/segger/systemview/SEGGER" -I"C:/Users/ADMIN/SimplicityStudio/SDKs/gecko_sdk//platform/common/toolchain/inc" -I"C:/Users/ADMIN/SimplicityStudio/SDKs/gecko_sdk//platform/service/system/inc" -I"C:/Users/ADMIN/SimplicityStudio/SDKs/gecko_sdk//platform/service/sleeptimer/inc" -I"C:/Users/ADMIN/SimplicityStudio/SDKs/gecko_sdk//platform/service/udelay/inc" -Os -Wall -Wextra -mno-sched-prolog -fno-builtin -ffunction-sections -fdata-sections -imacrossl_gcc_preinclude.h -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mcmse -fno-builtin-printf -fno-builtin-sprintf --specs=nano.specs -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"$@" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+
