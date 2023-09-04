@@ -1,0 +1,1 @@
+The project uses Thunderboard Chip BGM220 as Device device read data from AHT20 and BH1750 sensors to measure temperature and light moisture, then transfer data to the client device via BLE.
