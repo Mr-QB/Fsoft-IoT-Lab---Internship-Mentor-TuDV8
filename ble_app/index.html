@@ -1,0 +1,46 @@
+<html>
+
+<head>
+    <script src="js/constants.js"charset="utf-8"></script>
+    <script src="js/wstest.js"></script>
+</head>
+
+<body>
+    <h2>BLE APP</h2>
+    <table>
+        <tr>
+            <td><button id="btn_test" class="button" onclick="scanBLE();">Scan BLE Device</button></td>
+            <table id="device-table" border="1">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>bdaddr</th>
+                        <th>Connected</th>
+                        <th>UUIDs</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Dữ liệu sẽ được thêm vào đây bằng JavaScript -->
+                </tbody>
+            </table>
+
+        </tr>
+    </table>
+    <table id="service-table" border="1">
+        <thead>
+            <tr>
+                <th>UUID</th>
+                <th>Handle</th>
+                <th>Characteristics</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Dữ liệu sẽ được điền vào đây -->
+        </tbody>
+    </table>
+    <div id="message" class="important"></div>
+    <pre id="content"></pre>
+
+</body>
+
+</html>
