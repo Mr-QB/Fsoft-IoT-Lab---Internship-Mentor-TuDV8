@@ -1,5 +1,5 @@
 # Project Name
-
+IoT system for fire and smoke detection. 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
 ## Description
